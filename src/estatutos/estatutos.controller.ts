@@ -1,6 +1,5 @@
-import { Controller, Get, Post, Body, Param, Delete, Put } from '@nestjs/common';
+import { Controller, Get, Body, Param,  Put } from '@nestjs/common';
 import { EstatutosService } from './estatutos.service';
-import { CreateEstatutoDto } from './dto/create-estatuto.dto';
 import { UpdateEstatutoDto } from './dto/update-estatuto.dto';
 
 @Controller('estatutos')

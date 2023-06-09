@@ -5,6 +5,7 @@ import { ConfigModule } from '@nestjs/config';
 
 import { EstatutosModule } from './estatutos/estatutos.module';
 import { SequelizeModule } from '@nestjs/sequelize';
+import { UserModule } from './user/user.module';
 
 
 console.log('process.env.DB_HOST',process.env.DB_HOST);
@@ -22,7 +23,7 @@ console.log('process.env.DB_HOST',process.env.DB_HOST);
       autoLoadModels: true,
       synchronize: true,
     }), 
-    EstatutosModule,
+    EstatutosModule, UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],
